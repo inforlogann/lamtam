@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cancer</title>
+    <style>
+        h1 {
+        display: block;
+        font-size: 6em;
+        margin-top: 0.67em;
+        margin-bottom: 0.67em;
+        margin-left: 0;
+        margin-right: 0;
+        font-weight: bold;
+            color: #555;
+            }
+</style>
+</head>
+
+<body>
+{#<img src="/images/wukong.jpg" alt="">#}
+
+
+<h1>NOEMNOPA</h1>
+{% for pain in girls %}
+    <img src="{{ pain.image }}" alt="">
+    <h3>{{pain.name}}</h3>
+    <p> age :{{pain.age}}</p>
+    <p> breast:{{ pain.breast }}</p>
+    <p>waist:{{ pain.waist }}</p>
+    <p>hips:{{  pain.hips}}</p>
+    <a href="{{ pain.link }}"></a>
+{% endfor %}
+
+</body>
+</html>
